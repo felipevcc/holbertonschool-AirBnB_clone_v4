@@ -23,6 +23,7 @@
 }
 .filters button:hover {
     opacity: 0.9;
+    cursor: pointer;
 }
 
 .filters .locations,.filters .amenities {

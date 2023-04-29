@@ -1,5 +1,13 @@
-# AirBnB Clone - The Console
-The console is the first segment of the AirBnB project at Holberton School that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter is created in this segment to manage objects for the AirBnB(HBnB) website.
+<div align="center">
+  <h1>HBNB - The Console <img src="https://i.imgur.com/elr4ah9.png" width=55 align=center> </h1>
+</div>
+
+<img align="center" src="https://i.imgur.com/MQq3ABc.png" alt="Logo">
+
+## Description
+This repository contains version 3 of a project to build a clone of the AirBnB website. This version implements a console and an API to manage program data. Console commands and the API allow the user to create, update, and destroy objects, as well as manage file storage, using a JSON serialization system or using MySQL as the database, Flask was also an implementation in this version.
+
+<img src="https://i.imgur.com/RNdxdXP.png" alt="Structure">
 
 #### Functionalities of this command interpreter:
 * Create a new object (ex: a new User or a new Place)
@@ -14,6 +22,7 @@ The console is the first segment of the AirBnB project at Holberton School that 
 * [File Descriptions](#file-descriptions)
 * [Usage](#usage)
 * [Examples of use](#examples-of-use)
+* [API](#api)
 * [Bugs](#bugs)
 * [Authors](#authors)
 * [License](#license)
@@ -131,11 +140,9 @@ TestBaseModel class:
 ```
 vagrantAirBnB_clone$./console.py
 (hbnb) help
-
 Documented commands (type help <topic>):
 ========================================
 EOF  all  create  destroy  help  quit  show  update
-
 (hbnb) all MyModel
 ** class doesn't exist **
 (hbnb) create BaseModel
@@ -150,15 +157,33 @@ EOF  all  create  destroy  help  quit  show  update
 (hbnb) quit
 ```
 
+## API
+
+This project have 6 entities, all HTTP methods are supported:
+* /amenities
+* /cities
+* /places
+* /reviews
+* /states
+* /users
+
+**Note:** Resources have relations.
+
+The available nested routes are:
+
+* /states/`<state_id>`/cities
+* /places/`<place_id>`/reviews
+* /cities/`<city_id>`/places
+
 ## Bugs
 No known bugs at this time. 
 
 ## Authors
-Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
-Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
-Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
-David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
+* Alexa Orrico - [Github](https://github.com/alexaorrico)
+* Jennifer Huang - [Github](https://github.com/jhuang10123)
+* Juan Esteban Duque - [Github](https://github.com/Juanesduque1)
+* Felipe Villamizar - [Github](https://github.com/felipevcc)
+* Andres Solarte - [Github](https://github.com/Andres98100)
 
-Second part of Airbnb: Joann Vuong
 ## License
-Public Domain. No copy write protection. 
+Public Domain. No copy write protection.
