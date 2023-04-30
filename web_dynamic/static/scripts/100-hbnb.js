@@ -1,7 +1,9 @@
 $(document).ready(function () {
 
+  const HOST = 'localhost';
+
   // Get api status
-  $.get("http://localhost:5001/api/v1/status/", data => {
+  $.get(`http://${HOST}:5001/api/v1/status/`, data => {
     if (data.status == "OK") {
       $('DIV#api_status').addClass("available");
     } else {
@@ -56,7 +58,7 @@ $(document).ready(function () {
   function search (filters = {}) {
     $.ajax({
       type: 'POST',
-      url: 'http://localhost:5001/api/v1/places_search',
+      url: `http://${HOST}:5001/api/v1/places_search`,
       data: JSON.stringify(filters),
       dataType: 'json',
       contentType: 'application/json',
