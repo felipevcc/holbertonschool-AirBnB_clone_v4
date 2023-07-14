@@ -5,7 +5,7 @@
 <img align="center" src="https://i.imgur.com/MQq3ABc.png" alt="Logo">
 
 ## Description
-This repository contains version 3 of a project to build a clone of the AirBnB website. This version implements a console and an API to manage program data. Console commands and the API allow the user to create, update, and destroy objects, as well as manage file storage, using a JSON serialization system or using MySQL as the database, Flask was also an implementation in this version.
+This repository contains version 4 of a project to build a clone of the AirBnB website. This version implements a console and an API to manage program data. Console commands and the API allow the user to create, update, and destroy objects, as well as manage file storage, using a JSON serialization system or using MySQL as the database, Flask was also an implementation in this version.
 
 <img src="https://i.imgur.com/RNdxdXP.png" alt="Structure">
 
